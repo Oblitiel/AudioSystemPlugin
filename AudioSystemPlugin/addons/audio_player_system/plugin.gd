@@ -14,9 +14,9 @@ func _disable_plugin() -> void:
 
 func _enter_tree() -> void:
 	# Initialization of the plugin goes here.
-	pass
+	add_custom_type("RandomAudioPlayer","Node",preload("res://addons/audio_player_system/plugin.gd"),preload("res://addons/audio_player_system/icons/RandomAudioPlayer.svg"))
 
 
 func _exit_tree() -> void:
 	# Clean-up of the plugin goes here.
-	pass
+	remove_custom_type("RandomAudioPlayer")
